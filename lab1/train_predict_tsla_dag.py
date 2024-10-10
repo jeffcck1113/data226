@@ -84,7 +84,7 @@ with DAG(
     start_date = datetime(2024,10,1),
     catchup=False,
     tags=['ML', 'ELT'],
-    schedule = '30 2 * * 1-5'
+    schedule = '30 14 * * 1-5'
 ) as dag:
 
     train_input_table = "dev.raw_data.tsla_price"
