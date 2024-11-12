@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: dev
+    schema: raw_data
+    tables:
+      - name: tsla_price
+        description: "Tesla stock price data"
+      - name: tsm_price
+        description: "TSMC stock price data"
+      - name: nvda_price
+        description: "NVDA stock price data"
+
+  - name: analytics
+    database: dev
+    schema: analytics
+    description: "Schema for analytics tables (ELT)"

@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: tsla_moving_avg
+    description: "Analytics model for tsla price"
+    columns:
+      - name: date
+        description: "Unique identifier for each stock price record"
+        data_tests:
+          - unique
+          - not_null
+  - name: tsm_moving_avg
+    description: "Analytics model for tsm price"
+    columns:
+      - name: date
+        description: "Unique identifier for each stock price record"
+        data_tests:
+          - unique
+          - not_null
+  - name: nvda_moving_avg
+    description: "Analytics model for nvda price"
+    columns:
+      - name: date
+        description: "Unique identifier for each stock price record"
+        data_tests:
+          - unique
+          - not_null
