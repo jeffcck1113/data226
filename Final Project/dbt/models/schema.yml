@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: bitcoin_moving_avg
+    description: "Analytics model for bitcoin price"
+    columns:
+      - name: TIME
+        description: "Unique identifier for each price record"
+        data_tests:
+          - unique
+          - not_null

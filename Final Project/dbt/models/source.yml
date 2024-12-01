@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: dev
+    schema: raw_data
+    tables:
+      - name: bitcoin_price
+        description: "Bitcoin price data"
+
+
+  - name: analytics
+    database: dev
+    schema: analytics
+    description: "Schema for analytics tables (ELT)"
